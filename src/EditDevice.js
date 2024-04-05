@@ -27,7 +27,7 @@ function UpdateDevice(PName, PSerialNumber, PType, PImage, PStatus, NewSerialNum
             Status: NewStatus
         }
 
-    fetch(`http://localhost:3214/Server/Device/Edit/${PName}/${PSerialNumber}`, {
+    fetch(`https://loc-dev-server.onrender.com/Server/Device/Edit/${PName}/${PSerialNumber}`, {
         method: 'PUT',
         headers: {
             'Content-Type': 'application/json',
@@ -54,7 +54,7 @@ export default function EditDevice(props) {
 
     useEffect(() => {
         let fetchLocations = async () => {
-        let res = await fetch(`http://localhost:3214/Server/Location/${props.Name}`);
+        let res = await fetch(`https://loc-dev-server.onrender.com/Server/Location/${props.Name}`);
         let data = await res.json();
         setLocations(data);
         };

@@ -23,7 +23,7 @@ function UpdateLocation(PName, PAddress, PPhone, NewName, NewAddress, NewPhone){
             Phone: NewPhone
         }
 
-    fetch(`http://localhost:3214/Server/Location/Edit/${PName}`, {
+    fetch(`https://loc-dev-server.onrender.com/Server/Location/Edit/${PName}`, {
         method: 'PUT',
         headers: {
             'Content-Type': 'application/json',

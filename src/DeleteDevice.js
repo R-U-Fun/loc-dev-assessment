@@ -5,7 +5,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import Locations from './Locations'
 
 export default async function DeleteDevice(Name, SerialNumber){
-    await fetch(`http://localhost:3214/Server/Device/Delete/${Name}/${SerialNumber}`, {
+    await fetch(`https://loc-dev-server.onrender.com/Server/Device/Delete/${Name}/${SerialNumber}`, {
         method: 'DELETE',
     })
     .catch((error) => {

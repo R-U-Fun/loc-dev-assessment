@@ -18,7 +18,7 @@ export default function OneAtOnce(props) {
 
     useEffect(() => {
         let fetchLocations = async () => {
-        let res = await fetch(`http://localhost:3214/Server/Location/${props.Name}`);
+        let res = await fetch(`https://loc-dev-server.onrender.com/Server/Location/${props.Name}`);
         let data = await res.json();
         setLocations(data);
         };

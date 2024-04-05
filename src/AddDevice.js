@@ -21,7 +21,7 @@ function SaveDevice(Name, Device, NewSerialNumber, NewType, NewImage, NewStatus)
 
     console.log(Device);
 
-    fetch(`http://localhost:3214/Server/Device/Add/${Name}`, {
+    fetch(`https://loc-dev-server.onrender.com/Server/Device/Add/${Name}`, {
         method: 'PUT',
         headers: {
             'Content-Type': 'application/json',
@@ -48,7 +48,7 @@ export default function AddDevice(props) {
 
     useEffect(() => {
         let fetchLocations = async () => {
-        let res = await fetch(`http://localhost:3214/Server/Location/${props.Name}`);
+        let res = await fetch(`https://loc-dev-server.onrender.com/Server/Location/${props.Name}`);
         let data = await res.json();
         setLocations(data);
         };

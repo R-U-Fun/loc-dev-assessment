@@ -15,7 +15,7 @@ function SaveLocation(NewName, NewAddress, NewPhone){
 
     console.log(NewLocation);
 
-    fetch('http://localhost:3214/Server/Location/Add', {
+    fetch('https://loc-dev-server.onrender.com/Server/Location/Add', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

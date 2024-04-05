@@ -13,7 +13,7 @@ export default function AllAtOnce() {
 
   useEffect(() => {
     let fetchLocations = async () => {
-      let res = await fetch('http://localhost:3214/Server/AllLocations');
+      let res = await fetch('https://loc-dev-server.onrender.com/Server/AllLocations');
       let data = await res.json();
       setLocations(data);
     };
