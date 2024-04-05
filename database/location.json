@@ -1,0 +1,52 @@
+[
+{
+	"Name":"Colombo",
+	"Address":"No. 1, ABC Road, Colombo",
+	"Phone":"0768505131",
+	"Devices": [
+	{
+		"SerialNumber":"D001",
+		"Type":"pos",
+		"Image":"path",
+		"Status":true
+	},
+	{
+		"SerialNumber":"D002",
+		"Type":"kisok",
+		"Image":"path2",
+		"Status":false
+	},
+	{
+		"SerialNumber":"D003",
+		"Type":"signage",
+		"Image":"path3",
+		"Status":true
+	}
+	]
+},
+{
+	"Name":"Batticaloa",
+	"Address":"No. 2, DEF Road, Batticaloa",
+	"Phone":"0779616242",
+	"Devices": [
+	{
+		"SerialNumber":"D001",
+		"Type":"pos",
+		"Image":"path",
+		"Status":true
+	},
+	{
+		"SerialNumber":"D002",
+		"Type":"kisok",
+		"Image":"path2",
+		"Status":false
+	},
+	{
+		"SerialNumber":"D003",
+		"Type":"signage",
+		"Image":"path3",
+		"Status":true
+	}
+	]
+}
+]
